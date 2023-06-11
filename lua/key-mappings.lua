@@ -48,3 +48,13 @@ map('n', '<C-t>', '[[:enew<CR>]]', {})
 map('n', '<C-x>', '[[:bd<CR>]]', {})
 map('n', '<Tab>', [[:bn<CR>]], {})
 map('n', '<S-Tab>', [[:bp<CR>]], {})
+
+
+-- For Resizing Split
+map('n', '<C-Down>', [[:resize +3<CR>]], {})
+map('n', '<C-Up>', [[:resize -3<CR>]], {})
+map('n', '<C-Right>', [[:vertical resize +3<CR>]], {})
+map('n', '<C-Left>', [[:vertical resize -3<CR>]], {})
+--map('n', '<leader>th', [[<C-w>t<C-w>h<CR>]], {})
+--map('n', '<leader>tk', [[<C-w>t<C-w>k<CR>]], {})
+

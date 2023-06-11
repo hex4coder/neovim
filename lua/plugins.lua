@@ -95,12 +95,15 @@ return require('packer').startup(function(use)
 	-- Dahsboard
 	use {
 	  'glepnir/dashboard-nvim',
-  event = 'VimEnter',
-  config = function()
-    require('dashboard').setup {
-      -- config
-    }
-  end,
-  requires = {'nvim-tree/nvim-web-devicons'}
-}
+	  event = 'VimEnter',
+	  config = function()
+	    require('dashboard').setup {
+	      -- config
+	    }
+	  end,
+	  requires = {'nvim-tree/nvim-web-devicons'}
+	}
+
+	-- Formatter
+	use "lukas-reineke/lsp-format.nvim"
 end)
